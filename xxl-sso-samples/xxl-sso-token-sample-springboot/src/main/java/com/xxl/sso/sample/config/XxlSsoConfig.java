@@ -29,7 +29,7 @@ public class XxlSsoConfig {
         // filter
         FilterRegistrationBean registration = new FilterRegistrationBean();
 
-        registration.setName("XxlSsoFilter");
+        registration.setName("XxlSsoTokenFilter");
         registration.setOrder(1);
         registration.addUrlPatterns("/*");
         registration.setFilter(new XxlSsoTokenFilter());
